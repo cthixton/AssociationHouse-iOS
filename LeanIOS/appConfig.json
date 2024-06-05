@@ -1,0 +1,464 @@
+{
+  "general": {
+    "screenOrientation": {
+      "iphone": null,
+      "ipad": null,
+      "androidPhone": null,
+      "androidTablet": null
+    },
+    "userAgentRegexes": [],
+    "replaceStrings": [],
+    "nativeBridgeUrls": [],
+    "languages": [],
+    "userAgentAdd": "median",
+    "enableWindowOpen": true,
+    "forceUserAgent": "",
+    "publicKey": "jqqpyy",
+    "deviceRegKey": "4vnuppmrjwr8epgkr1ybn2q774",
+    "appName": "Association House",
+    "initialUrl": "https://www.associationhouse.org/",
+    "androidPackageName": "co.median.android.jqqpyy",
+    "iosBundleId": "co.median.ios.jqqpyy",
+    "iosUserAgentAdd": "median",
+    "androidUserAgentAdd": "median",
+    "androidSigningKey": "release",
+    "injectMedianJS": true,
+    "forceSessionCookieExpiry": 0,
+    "androidForceUserAgent": "",
+    "iosForceUserAgent": "",
+    "iosCustomHeaders": {},
+    "androidCustomHeaders": {},
+    "version": 5
+  },
+  "navigation": {
+    "tabNavigation": {
+      "tabSelectionConfig": [],
+      "tabMenus": [],
+      "active": false
+    },
+    "sidebarNavigation": {
+      "menuSelectionConfig": {
+        "redirectLocations": [
+          {
+            "regex": ".*",
+            "menuName": "default",
+            "loggedIn": true
+          }
+        ]
+      },
+      "menus": [
+        {
+          "active": false,
+          "items": [
+            {
+              "url": "https://exposuresecurity.com/",
+              "label": "",
+              "subLinks": []
+            },
+            {
+              "url": "https://exposuresecurity.com/services/virtual-ciso-services/",
+              "label": "Virtual ciso™",
+              "subLinks": []
+            },
+            {
+              "url": "https://exposuresecurity.com/#",
+              "label": "Assessment",
+              "subLinks": []
+            },
+            {
+              "url": "https://exposuresecurity.com/services/assessment/",
+              "label": "Assessment overview",
+              "subLinks": []
+            },
+            {
+              "url": "https://exposuresecurity.com/services/pci-dss/",
+              "label": "Pci dss",
+              "subLinks": []
+            },
+            {
+              "url": "https://exposuresecurity.com/services/pentest/",
+              "label": "Red™ team  penetration testing",
+              "subLinks": []
+            },
+            {
+              "url": "https://exposuresecurity.com/services/riskacuity-risk-maturity-assessments/",
+              "label": "Riskacuity risk™ & maturity assessments",
+              "subLinks": []
+            },
+            {
+              "url": "https://exposuresecurity.com/services/enlighten-source-code-review/",
+              "label": "Enlighten™ source code review",
+              "subLinks": []
+            },
+            {
+              "url": "https://exposuresecurity.com/services/cloudcounsel-architecture-guidance/",
+              "label": "Cloudcounsel™ architecture guidance",
+              "subLinks": []
+            },
+            {
+              "url": "https://exposuresecurity.com/services/compliance-audit/",
+              "label": "Complianceclarity™ compliance & audit",
+              "subLinks": []
+            },
+            {
+              "url": "https://exposuresecurity.com/services/managed-security/",
+              "label": "Virtualsoc™ managed security",
+              "subLinks": []
+            },
+            {
+              "url": "https://exposuresecurity.com/services/security-training/",
+              "label": "Training overview",
+              "subLinks": []
+            },
+            {
+              "url": "https://exposuresecurity.com/services/secure-coding-bootcamp/",
+              "label": "Secure coding bootcamp",
+              "subLinks": []
+            },
+            {
+              "url": "https://exposuresecurity.com/services/security-awareness-training/",
+              "label": "Security awareness training",
+              "subLinks": []
+            },
+            {
+              "url": "https://exposuresecurity.com/services/breach-remediation/",
+              "label": "Breach remediation",
+              "subLinks": []
+            },
+            {
+              "url": "https://exposuresecurity.com/about-us/",
+              "label": "About exposure security",
+              "subLinks": []
+            },
+            {
+              "url": "https://exposuresecurity.com/clients/",
+              "label": "Сlients",
+              "subLinks": []
+            },
+            {
+              "url": "https://exposuresecurity.com/blog",
+              "label": "Blog",
+              "subLinks": []
+            },
+            {
+              "url": "https://exposuresecurity.com/careers/",
+              "label": "Careers",
+              "subLinks": []
+            },
+            {
+              "url": "https://exposuresecurity.com/bitcoin/",
+              "label": "Bitcoin",
+              "subLinks": []
+            },
+            {
+              "url": "https://exposuresecurity.com/investors/",
+              "label": "Investors",
+              "subLinks": []
+            },
+            {
+              "url": "https://exposuresecurity.com/privacy/",
+              "label": "Privacy",
+              "subLinks": []
+            },
+            {
+              "url": "https://exposuresecurity.com/events-2/",
+              "label": "Events",
+              "subLinks": []
+            },
+            {
+              "url": "https://exposuresecurity.com/contact/",
+              "label": "Contact",
+              "subLinks": []
+            },
+            {
+              "url": "https://www.exposuresecurity.com/contact",
+              "label": "Request a consultation",
+              "subLinks": []
+            }
+          ],
+          "name": "default"
+        }
+      ]
+    },
+    "regexInternalExternal": {
+      "rules": [
+        {
+          "mode": "external",
+          "label": "Non-web links",
+          "pagesToTrigger": "custom",
+          "regex": "^(?!https?://).*"
+        },
+        {
+          "mode": "appbrowser",
+          "label": "Facebook",
+          "pagesToTrigger": "custom",
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com.*"
+        },
+        {
+          "mode": "appbrowser",
+          "label": "Twitter",
+          "pagesToTrigger": "custom",
+          "regex": "https?://([-\\w]+\\.)*twitter\\.com/.*"
+        },
+        {
+          "mode": "appbrowser",
+          "label": "Instagram",
+          "pagesToTrigger": "custom",
+          "regex": "https?://([-\\w]+\\.)*instagram\\.com/.*"
+        },
+        {
+          "mode": "appbrowser",
+          "label": "Google Maps",
+          "pagesToTrigger": "custom",
+          "regex": "https?://maps\\.google\\.com.*"
+        },
+        {
+          "mode": "appbrowser",
+          "label": "Google Maps Search",
+          "pagesToTrigger": "custom",
+          "regex": "https?://([-\\w]+\\.)*google\\.com/maps/search/.*"
+        },
+        {
+          "mode": "appbrowser",
+          "label": "LinkedIn",
+          "pagesToTrigger": "custom",
+          "regex": "https?://([-\\w]+\\.)*linkedin\\.com/.*"
+        },
+        {
+          "mode": "internal",
+          "label": "Microsoft Login",
+          "pagesToTrigger": "custom",
+          "regex": "https?://login\\.microsoftonline\\.com.*"
+        },
+        {
+          "mode": "internal",
+          "label": "All pages on my domain",
+          "pagesToTrigger": "domain",
+          "regex": "https?:\\/\\/([-\\w]+\\.)*associationhouse.org(\\/.*)?$"
+        },
+        {
+          "mode": "appbrowser",
+          "label": "All Other Links",
+          "pagesToTrigger": "all",
+          "regex": ".*"
+        }
+      ],
+      "active": true
+    },
+    "androidPullToRefresh": false,
+    "iosPullToRefresh": true,
+    "navigationTitles": {
+      "titles": [],
+      "active": true
+    },
+    "ignorePageFinishedRegexes": [],
+    "actionConfig": {
+      "actions": [],
+      "actionSelection": [],
+      "active": true
+    },
+    "androidShowRefreshButton": false,
+    "iosShowRefreshButton": false,
+    "deepLinkDomains": {
+      "domains": [],
+      "enableAndroidApplinks": false
+    },
+    "navigationLevels": {
+      "levels": [],
+      "active": true
+    },
+    "toolbarNavigation": {
+      "enabled": false,
+      "visibilityByPages": "allPages",
+      "visibilityByBackButton": "backButtonActive",
+      "regexes": [
+        {
+          "enabled": true,
+          "regex": ".*"
+        }
+      ],
+      "items": [
+        {
+          "system": "back",
+          "titleType": "defaultText",
+          "visibility": "allPages",
+          "urlRegex": [
+            {
+              "enabled": true,
+              "regex": ".*"
+            }
+          ]
+        },
+        {
+          "system": "refresh",
+          "enabled": false,
+          "visibility": "allPages",
+          "urlRegex": [
+            {
+              "enabled": true,
+              "regex": ".*"
+            }
+          ]
+        },
+        {
+          "system": "forward",
+          "enabled": false,
+          "titleType": "defaultText",
+          "visibility": "allPages",
+          "urlRegex": [
+            {
+              "enabled": true,
+              "regex": ".*"
+            }
+          ]
+        }
+      ]
+    },
+    "redirects": [],
+    "iosShowOfflinePage": true,
+    "iosConnectionOfflineTime": 10,
+    "androidShowOfflinePage": true,
+    "androidConnectionOfflineTime": 10,
+    "iosSettings": {},
+    "maxWindows": {
+      "enabled": false,
+      "numWindows": 5,
+      "autoClose": false
+    }
+  },
+  "styling": {
+    "iosLaunchScreen": {
+      "backgroundColor": "#FFFFFF",
+      "backgroundColorDark": "#000000",
+      "backgroundImage": "https://s3.amazonaws.com/gonativeio/app_files/jqqpyy/1717007326480_nwyymtujahqvc_FFFFFF_1_2x2.png",
+      "backgroundImageDark": "https://s3.amazonaws.com/gonativeio/app_files/jqqpyy/1717007326494_c6hxfv1uv96vc_000000_1_2x2.png",
+      "centerImageDark": "https://s3.amazonaws.com/gonativeio/app_files/jqqpyy/app_icon_ios_1717007320704.png",
+      "centerImage": "https://s3.amazonaws.com/gonativeio/app_files/jqqpyy/app_icon_ios_1717007320704.png"
+    },
+    "androidLaunchImages": {
+      "mdpi": "https://s3.amazonaws.com/gonativeio/app_files/jqqpyy/1717007326716_7tnwtbv232u0r_180x180.png",
+      "hdpi": "https://s3.amazonaws.com/gonativeio/app_files/jqqpyy/1717007326729_5jpe7g0ukub4a_270x270.png",
+      "xhdpi": "https://s3.amazonaws.com/gonativeio/app_files/jqqpyy/1717007326741_mxx3kvnhw8gc2_360x360.png",
+      "xxhdpi": "https://s3.amazonaws.com/gonativeio/app_files/jqqpyy/1717007326752_4fmk5peu9c2hm_540x540.png",
+      "xxxhdpi": "https://s3.amazonaws.com/gonativeio/app_files/jqqpyy/1717007326796_ktpf8q6938y52_720x720.png"
+    },
+    "androidLaunchImagesDark": {
+      "mdpi": "https://s3.amazonaws.com/gonativeio/app_files/jqqpyy/1717007326829_zx2v59w3gyuxr_180x180.png",
+      "hdpi": "https://s3.amazonaws.com/gonativeio/app_files/jqqpyy/1717007326862_xqy4kq80jxudg_270x270.png",
+      "xhdpi": "https://s3.amazonaws.com/gonativeio/app_files/jqqpyy/1717007326917_ajqrc7fy2w216_360x360.png",
+      "xxhdpi": "https://s3.amazonaws.com/gonativeio/app_files/jqqpyy/1717007326977_97h8197cte6ae_540x540.png",
+      "xxxhdpi": "https://s3.amazonaws.com/gonativeio/app_files/jqqpyy/1717007327015_91mr4aabv2c2y_720x720.png"
+    },
+    "transitionInteractiveDelayMax": 0.2,
+    "menuAnimationDuration": 0.15,
+    "androidShowSplash": true,
+    "disableAnimations": false,
+    "hideWebviewAlpha": 0.5,
+    "iosDarkMode": "auto",
+    "iosTitleColor": "#0E0D08",
+    "iosTitleColorDark": "#ffffff",
+    "iosTintColor": "#0E0D08",
+    "iosTintColorDark": "#ffffff",
+    "iosSidebarTextColor": "#0E0D08",
+    "iosSidebarTextColorDark": "#ffffff",
+    "iosStatusBarBackgroundColor": "#ffffffff",
+    "iosStatusBarBackgroundColorDark": "#000000",
+    "iosEnableBlurInStatusBar": false,
+    "iosSidebarBackgroundColor": "#f8f8f8",
+    "iosSidebarBackgroundColorDark": "#202020",
+    "iosNavigationBarTintColor": "#f8f8f8",
+    "iosNavigationBarTintColorDark": "#202020",
+    "iosTabBarTintColor": "#f8f8f8",
+    "iosTabBarTintColorDark": "#000000",
+    "icon": "https://s3.amazonaws.com/gonativeio/app_files/jqqpyy/app_icon_ios_1717007320704.png",
+    "iosHeaderImage": "https://s3.amazonaws.com/gonativeio/app_files/jqqpyy/app_icon_ios_1717007320704.png",
+    "showActionBar": false,
+    "showNavigationBar": false,
+    "iosSidebarFont": "Default",
+    "androidHideTitleInActionBar": false,
+    "navigationTitleImage": false,
+    "iosTheme": "default",
+    "androidTheme": "auto",
+    "androidBackgroundColor": "#FFFFFF",
+    "androidSidebarBackgroundColor": "#FFFFFF",
+    "androidSidebarForegroundColor": "#1A100B",
+    "androidActionBarBackgroundColor": "#FFFFFF",
+    "androidActionBarForegroundColor": "#1A100B",
+    "androidPullToRefreshColor": "#1A100B",
+    "androidAccentColor": "#009688",
+    "androidSidebarSeparatorColor": "#CCCCCC",
+    "androidSidebarHighlightColor": "#1A100B",
+    "androidTabBarBackgroundColor": "#FFFFFF",
+    "androidTabBarTextColor": "#949494",
+    "androidTabBarIndicatorColor": "#1A100B",
+    "androidTabPressedBackgroundColor": "#CCCCCC",
+    "androidStatusBarBackgroundColor": "#5C5C5C",
+    "androidShowLogoInSideBar": true,
+    "androidShowAppNameInSideBar": true,
+    "androidSwipeNavigationBackgroundColor": "#FFFFFF",
+    "androidSwipeNavigationActiveColor": "#000000",
+    "androidSwipeNavigationInactiveColor": "#666666",
+    "androidActionBarBackgroundColorDark": "#333333",
+    "androidStatusBarBackgroundColorDark": "#333333",
+    "androidActionBarForegroundColorDark": "#FFFFFF",
+    "androidAccentColorDark": "#80cbc4",
+    "androidBackgroundColorDark": "#333333",
+    "androidSidebarForegroundColorDark": "#FFFFFF",
+    "androidSidebarBackgroundColorDark": "#333333",
+    "androidSidebarSeparatorColorDark": "#666666",
+    "androidSidebarHighlightColorDark": "#FFFFFF",
+    "androidPullToRefreshColorDark": "#FFFFFF",
+    "androidTabBarTextColorDark": "#FFFFFF",
+    "androidTabBarBackgroundColorDark": "#333333",
+    "androidTabBarIndicatorColorDark": "#666666",
+    "androidTabPressedBackgroundColorDark": "#999999",
+    "androidSwipeNavigationBackgroundColorDark": "#333333",
+    "androidSwipeNavigationActiveColorDark": "#FFFFFF",
+    "androidSwipeNavigationInactiveColorDark": "#666666",
+    "androidSplashBackgroundColor": "#FFFFFF",
+    "androidSplashBackgroundColorDark": "#000000",
+    "androidWebviewTextZoom": null,
+    "androidIcon": "https://s3.amazonaws.com/gonativeio/app_files/jqqpyy/app_icon_ios_1717007320704.png",
+    "iosIcon": "https://s3.amazonaws.com/gonativeio/app_files/jqqpyy/app_icon_ios_1717007320704.png",
+    "customIcons": {},
+    "iosStatusBarStyle": "auto",
+    "iosEnableOverlayInStatusBar": false,
+    "androidStatusBarStyle": "auto",
+    "androidEnableOverlayInStatusBar": false,
+    "iosActivityIndicatorColor": "#808080",
+    "iosActivityIndicatorColorDark": "#808080",
+    "androidActivityIndicatorColor": "#808080",
+    "androidActivityIndicatorColorDark": "#808080",
+    "navigationTitleImageLocation": "assets/defaults/app-icon-placeholder.png",
+    "navigationTitleImageLocationDark": "assets/defaults/app-icon-placeholder.png",
+    "androidHeaderImage": "assets/defaults/app-icon-placeholder.png",
+    "androidHeaderImageDark": "assets/defaults/app-icon-placeholder.png",
+    "iosHeaderImageDark": "https://s3.amazonaws.com/gonativeio/app_files/jqqpyy/app_icon_ios_1717007320704.png"
+  },
+  "permissions": {
+    "usesGeolocation": false,
+    "androidDownloadToPublicStorage": false,
+    "enableWebRTCamera": false,
+    "enableWebRTCMicrophone": false,
+    "iosLocationUsageDescription": "",
+    "iosCameraUsageDescription": "",
+    "iosMicrophoneUsageDescription": "",
+    "iOSATTUserTrackingDescription": "",
+    "iOSRequestATTConsentOnLoad": false
+  },
+  "developmentTools": {
+    "enableWebConsoleLogs": false
+  },
+  "services": {
+    "oneSignalV5": {
+      "active": false
+    }
+  },
+  "contextMenu": {
+    "linkActions": [
+      "copyLink",
+      "openExternal"
+    ],
+    "enabled": false
+  }
+}
