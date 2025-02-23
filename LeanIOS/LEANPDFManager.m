@@ -7,10 +7,10 @@
 //
 
 #import "LEANPDFManager.h"
-#import "LEANDocumentSharer.h"
+#import "LEANUtilities.h"
 #import "GonativeIO-Swift.h"
 
-#define TAB_BAR_HEIGHT 45
+#define TAB_BAR_HEIGHT 49
 
 @interface LEANPDFViewController : UIViewController <UISearchBarDelegate, PDFViewDelegate>
 @property NSURL *pdfUrl;
@@ -19,18 +19,33 @@
 @property UIStackView *bottomTabView;
 @property UISearchBar *searchBar;
 @property UILabel *pageLabel;
+@property UIActivityIndicatorView *activityIndicator;
 @end
 
 @implementation LEANPDFViewController
 
-- (void) viewDidLoad {
+- (void)viewDidLoad {
     [super viewDidLoad];
     
     [self setupNavigationItems];
     [self setupNavigationBar];
-    [self setupPdfView];
-    [self setupPdfPage];
-    [self setupBottomBar];
+    [self showActivityIndicator];
+    
+    NSString *filename = self.pdfUrl.lastPathComponent;
+    NSURL *directory = [NSURL fileURLWithPath:NSTemporaryDirectory()];
+    
+    [LEANUtilities downloadUrl:self.pdfUrl filename:filename directory:directory completion:^(NSURL *fileUrl) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (fileUrl) {
+                self.pdfUrl = fileUrl;
+            }
+            
+            [self hideActivityIndicator];
+            [self setupPdfView];
+            [self setupPdfPage];
+            [self setupBottomBar];
+        });
+    }];
 }
 
 - (void)setupNavigationBar {
@@ -51,12 +66,31 @@
     NSDictionary *textAttributes = @{ NSForegroundColorAttributeName: [UIColor colorNamed:@"titleColor"] };
     [self.navigationController.navigationBar setTitleTextAttributes:textAttributes];
     
-    UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStylePlain target:self action:@selector(done)];
+    NSString *doneTitle = NSLocalizedString(@"button-done", nil);
+    UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithTitle:doneTitle style:UIBarButtonItemStylePlain target:self action:@selector(done)];
     NSDictionary *attributes = @{ NSFontAttributeName: [UIFont boldSystemFontOfSize:16.0] };
     [doneButton setTitleTextAttributes:attributes forState:UIControlStateNormal];
     doneButton.tintColor = [UIColor colorNamed:@"tintColor"];
     self.navigationItem.rightBarButtonItem = doneButton;
     [self.navigationItem setHidesBackButton:YES animated:NO];
+}
+
+- (void)showActivityIndicator {
+    self.activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleLarge];
+    self.activityIndicator.color = [UIColor colorNamed:@"activityIndicatorColor"];
+    self.activityIndicator.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addSubview:self.activityIndicator];
+    [NSLayoutConstraint activateConstraints:@[
+        [self.activityIndicator.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor],
+        [self.activityIndicator.centerYAnchor constraintEqualToAnchor:self.view.centerYAnchor]
+    ]];
+    [self.activityIndicator startAnimating];
+}
+
+- (void)hideActivityIndicator {
+    [self.activityIndicator stopAnimating];
+    [self.activityIndicator removeFromSuperview];
+    self.activityIndicator = nil;
 }
 
 - (void)setupBottomBar {
@@ -102,8 +136,10 @@
 
 - (void)createButtonWithIcon:(NSString *)iconName action:(SEL)action {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    [button setImage:[UIImage systemImageNamed:iconName] forState:UIControlStateNormal];
-    [button.imageView setTintColor: [UIColor colorNamed:@"tintColor"]];
+    UIImageSymbolConfiguration *config = [UIImageSymbolConfiguration configurationWithPointSize:20];
+    UIImage *icon = [[UIImage systemImageNamed:iconName] imageByApplyingSymbolConfiguration:config];
+    [button setImage:icon forState:UIControlStateNormal];
+    [button.imageView setTintColor:[UIColor colorNamed:@"tintColor"]];
     [button addTarget:self action:action forControlEvents:UIControlEventTouchUpInside];
     button.translatesAutoresizingMaskIntoConstraints = NO;
     
@@ -131,7 +167,7 @@
     }
     
     [self.view addSubview:self.pdfView];
-
+    
     [NSLayoutConstraint activateConstraints:@[
         [self.pdfView.topAnchor constraintEqualToAnchor:self.view.topAnchor],
         [self.pdfView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor],
@@ -286,19 +322,25 @@
     }
 }
 
+- (BOOL)shouldHandleType:(NSString *)type {
+    return [type isEqualToString:@"application/pdf"] || [type isEqualToString:@"application/binary"];
+}
+
 - (BOOL)shouldHandleResponse:(NSURLResponse * _Nullable)response {
-    return [response.MIMEType isEqualToString:@"application/pdf"] || [response.URL.pathExtension.lowercaseString isEqualToString:@"pdf"];
+    return [self shouldHandleType:response.MIMEType];
 }
 
 - (void)openPDF:(NSURL * _Nullable)url wvc:(UIViewController * _Nonnull)wvc {
-    if (url) {
-        LEANPDFViewController *vc = [[LEANPDFViewController alloc] init];
-        vc.pdfUrl = url;
-        
-        UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:vc];
-        navController.modalPresentationStyle = UIModalPresentationFullScreen;
-        [wvc presentViewController:navController animated:YES completion:nil];
+    if (!url) {
+        return;
     }
+    
+    LEANPDFViewController *vc = [[LEANPDFViewController alloc] init];
+    vc.pdfUrl = url;
+    
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:vc];
+    navController.modalPresentationStyle = UIModalPresentationFullScreen;
+    [wvc presentViewController:navController animated:YES completion:nil];
 }
 
 @end

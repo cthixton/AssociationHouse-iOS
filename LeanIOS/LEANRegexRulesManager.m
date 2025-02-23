@@ -45,33 +45,12 @@
     self.regexRules = regexRules;
 }
 
-- (NSDictionary *)matchesWithUrlString:(NSString *)urlString {
-    for (NSUInteger i = 0; i < self.regexRules.count; i++) {
-        NSPredicate *predicate = self.regexRules[i][@"predicate"];
-        NSString *mode = self.regexRules[i][@"mode"];
-        
-        if (![predicate isKindOfClass:[NSPredicate class]] || ![mode isKindOfClass:[NSString class]]) {
-            continue;
-        }
-        
-        @try {
-            if ([predicate evaluateWithObject:urlString]) {
-                return @{ @"matches": @YES, @"mode": mode };
-            }
-        }
-        @catch (NSException* exception) {
-            NSLog(@"Error in regex internal external: %@", exception);
-        }
-    }
-    return @{ @"matches": @NO };
-}
-
 - (BOOL)shouldHandleRequest:(NSURLRequest *)request {
     NSURL *url = [request URL];
     NSString *urlString = [url absoluteString];
     NSString* hostname = [url host];
     
-    NSDictionary *matchResult = [self matchesWithUrlString:urlString];
+    NSDictionary *matchResult = [[GoNativeAppConfig sharedAppConfig] getRegexRuleForURL:urlString rules:self.regexRules];
     
     BOOL matchedRegex = [matchResult[@"matches"] boolValue];
     if (matchedRegex) {

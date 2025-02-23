@@ -37,9 +37,15 @@
         return;
     }
     
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
-    });
+    if ([mode isEqualToString:@"external"]) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
+        });
+        return;
+    }
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [self.wvc handleNewWindowRequest:request initialWebview:nil];
 }
 
 #pragma mark - SFSafariViewControllerDelegate

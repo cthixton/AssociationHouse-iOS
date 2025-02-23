@@ -1,6 +1,9 @@
 /* Button: Cancel */
 "button-cancel" = "Cancel";
 
+/* Button: Done */
+"button-done" = "Done";
+
 /* Button: OK */
 "button-ok" = "OK";
 

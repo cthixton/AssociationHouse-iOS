@@ -13,6 +13,7 @@
 
 @interface LEANPDFManager : NSObject
 + (LEANPDFManager * _Nonnull)shared;
+- (BOOL)shouldHandleType:(NSString * _Nullable)type;
 - (BOOL)shouldHandleResponse:(NSURLResponse * _Nullable)response;
 - (void)openPDF:(NSURL * _Nullable)url wvc:(UIViewController * _Nonnull)wvc;
 @end

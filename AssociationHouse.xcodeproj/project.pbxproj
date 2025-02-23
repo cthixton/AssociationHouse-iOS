@@ -33,7 +33,6 @@
 		2002B51318AB093900495B3D /* jquery-2.1.0.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 2002B51118AB091C00495B3D /* jquery-2.1.0.min.js */; };
 		2004820518B080DD005FDD9A /* SidebarHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2004820418B080DD005FDD9A /* SidebarHeaderView.xib */; };
 		2004AF7B18F8F936001E01E9 /* LEANWebViewIntercept.m in Sources */ = {isa = PBXBuildFile; fileRef = 2004AF7A18F8F936001E01E9 /* LEANWebViewIntercept.m */; };
-		200F75D01BCDA6B800C08BB5 /* notification.aff in Resources */ = {isa = PBXBuildFile; fileRef = 200F75CF1BCDA6B800C08BB5 /* notification.aff */; };
 		2018EE951907671A00EC4311 /* LEANUrlInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 2018EE941907671A00EC4311 /* LEANUrlInspector.m */; };
 		20191C471923DF6400BF1549 /* LEANProfilePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 20191C461923DF6400BF1549 /* LEANProfilePicker.m */; };
 		201AB2D61996AD66008C31BF /* LEANInstallation.m in Sources */ = {isa = PBXBuildFile; fileRef = 201AB2D51996AD66008C31BF /* LEANInstallation.m */; };
@@ -74,24 +73,19 @@
 		20B6B55519AC4C2E004019C4 /* LEANDocumentSharer.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B6B55419AC4C2E004019C4 /* LEANDocumentSharer.m */; };
 		20B8FFB71EB79D3F000F4CFA /* GNCustomHeaders.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B8FFB61EB79D3F000F4CFA /* GNCustomHeaders.m */; };
 		20B927AA28C4F03E004D4C15 /* custom-icons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 20B927A928C4EFE9004D4C15 /* custom-icons.ttf */; };
-		20C62B7D1D2708B7001D1646 /* GoNativeKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C62B7C1D2708B7001D1646 /* GoNativeKeychain.swift */; };
 		20CC06A72671191C00C794F2 /* LEANJsCustomCodeExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2018EE931907671A00EC5312 /* LEANJsCustomCodeExecutor.m */; };
 		20CC8EFE2677BE470083982E /* WindowsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CC8EFD2677BE470083982E /* WindowsController.swift */; };
 		20D77B701A2547E5008A938D /* LEANActionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D77B6F1A2547E5008A938D /* LEANActionManager.m */; };
 		20DDA55B28BE706D00635E59 /* custom-icons.json in Resources */ = {isa = PBXBuildFile; fileRef = 20DDA55A28BE706D00635E59 /* custom-icons.json */; };
 		20E49F8219A2C30C00B9343E /* LEANWebViewPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E49F8119A2C30C00B9343E /* LEANWebViewPool.m */; };
-		20F1F40D24F969F0004F680B /* custom_sound_1.aff in Resources */ = {isa = PBXBuildFile; fileRef = 20F1F40824F969EF004F680B /* custom_sound_1.aff */; };
-		20F1F40E24F969F0004F680B /* custom_sound_4.aff in Resources */ = {isa = PBXBuildFile; fileRef = 20F1F40924F969EF004F680B /* custom_sound_4.aff */; };
-		20F1F40F24F969F0004F680B /* custom_sound_3.aff in Resources */ = {isa = PBXBuildFile; fileRef = 20F1F40A24F969EF004F680B /* custom_sound_3.aff */; };
-		20F1F41024F969F0004F680B /* custom_sound_5.aff in Resources */ = {isa = PBXBuildFile; fileRef = 20F1F40B24F969F0004F680B /* custom_sound_5.aff */; };
-		20F1F41124F969F0004F680B /* custom_sound_2.aff in Resources */ = {isa = PBXBuildFile; fileRef = 20F1F40C24F969F0004F680B /* custom_sound_2.aff */; };
 		20F38BAE1B0D5AC700E90B4D /* LEANToolbarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F38BAD1B0D5AC700E90B4D /* LEANToolbarManager.m */; };
 		20F49C2519C7BE8900B46C5A /* MediaAccessibility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F49C2419C7BE8900B46C5A /* MediaAccessibility.framework */; };
 		20F49C2719C7BE9100B46C5A /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F49C2619C7BE9100B46C5A /* CoreText.framework */; };
 		20FC7FB5199D1C7800A70B08 /* LEANTabManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC7FB4199D1C7800A70B08 /* LEANTabManager.m */; };
 		37011C962BC40AAE00775CA0 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 37011C952BC40AAE00775CA0 /* PrivacyInfo.xcprivacy */; };
+		374399B62C2229E300B2F92D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 374399B42C2229E300B2F92D /* InfoPlist.strings */; };
 		379E3D432A2147C4001C8A01 /* GNSwiftUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E3D422A2147C4001C8A01 /* GNSwiftUtilities.swift */; };
-		38C55326AFF6897EFD39ADC2 /* Pods_AssociationHouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9442E615446B0D00107BDDC /* Pods_AssociationHouse.framework */; };
+		3909A5A92C1C99E7001F68C3 /* MedianEventsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3909A5A82C1C99E7001F68C3 /* MedianEventsManager.m */; };
 		3946F0282BD0DE7100E74ED5 /* ContextMenuHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3946F0272BD0DE7100E74ED5 /* ContextMenuHandler.swift */; };
 		395C15702B75D19D00E2985D /* LEANWindowsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 395C156F2B75D19D00E2985D /* LEANWindowsManager.m */; };
 		396F42242A970DF9003FD87E /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396F42232A970DF9003FD87E /* UIApplication+Extensions.swift */; };
@@ -100,7 +94,9 @@
 		39C7BFCB2A85E666006AF63C /* LEANLaunchScreenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C7BFCA2A85E666006AF63C /* LEANLaunchScreenManager.m */; };
 		39D073812BBB12EA004FF636 /* LEANPDFManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D073802BBB12EA004FF636 /* LEANPDFManager.m */; };
 		39DE1B492935E67F0001E926 /* GNLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DE1B482935E67F0001E926 /* GNLogManager.m */; };
-		8C1309EE4D3426FD2400FDE7 /* Pods_MedianIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6204B12ADCD3BD22C2FED8E4 /* Pods_MedianIOSTests.framework */; };
+		39DE1E4D2C82015900E96CFE /* LEANLoadingSpinnerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DE1E4C2C82015900E96CFE /* LEANLoadingSpinnerManager.m */; };
+		75931D4AC8E005CD2B694987 /* Pods_AssociationHouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E98BC2B9BA1816FA11571F5B /* Pods_AssociationHouse.framework */; };
+		93DA21EB31AE6F56B651894C /* Pods_MedianIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B6D83597DFB31F85DB20AAC /* Pods_MedianIOSTests.framework */; };
 		BB3C460E26A9C1F9007D03DA /* GoNativeJSBridgeLibrary.js in Resources */ = {isa = PBXBuildFile; fileRef = BB3C460D26A9C1F9007D03DA /* GoNativeJSBridgeLibrary.js */; };
 		BB6E68A9273C731E004846A3 /* GNJSBridgeInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6E68A8273C731E004846A3 /* GNJSBridgeInterface.m */; };
 		BB9A3B012631D2A7002C38F1 /* LEANIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9A3B002631D2A7002C38F1 /* LEANIcons.swift */; };
@@ -135,7 +131,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		123B42EE01E9717A212060F2 /* Pods-GonativeIO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GonativeIO.release.xcconfig"; path = "Target Support Files/Pods-GonativeIO/Pods-GonativeIO.release.xcconfig"; sourceTree = "<group>"; };
+		0B6D83597DFB31F85DB20AAC /* Pods_MedianIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedianIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2002B49818A9991300495B3D /* AssociationHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssociationHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2002B49B18A9991300495B3D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2002B49D18A9991300495B3D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -178,7 +174,6 @@
 		2004820418B080DD005FDD9A /* SidebarHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SidebarHeaderView.xib; sourceTree = "<group>"; };
 		2004AF7918F8F936001E01E9 /* LEANWebViewIntercept.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEANWebViewIntercept.h; sourceTree = "<group>"; };
 		2004AF7A18F8F936001E01E9 /* LEANWebViewIntercept.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEANWebViewIntercept.m; sourceTree = "<group>"; };
-		200F75CF1BCDA6B800C08BB5 /* notification.aff */ = {isa = PBXFileReference; lastKnownFileType = file; path = notification.aff; sourceTree = "<group>"; };
 		2018EE931907671A00EC4311 /* LEANUrlInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEANUrlInspector.h; sourceTree = "<group>"; };
 		2018EE931907671A00EC5311 /* LEANJsCustomCodeExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEANJsCustomCodeExecutor.h; sourceTree = "<group>"; };
 		2018EE931907671A00EC5312 /* LEANJsCustomCodeExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEANJsCustomCodeExecutor.m; sourceTree = "<group>"; };
@@ -239,27 +234,23 @@
 		20B8FFB61EB79D3F000F4CFA /* GNCustomHeaders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNCustomHeaders.m; sourceTree = "<group>"; };
 		20B927A928C4EFE9004D4C15 /* custom-icons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "custom-icons.ttf"; sourceTree = "<group>"; };
 		20C62B7B1D2708B7001D1646 /* GonativeIO-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GonativeIO-Bridging-Header.h"; sourceTree = "<group>"; };
-		20C62B7C1D2708B7001D1646 /* GoNativeKeychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoNativeKeychain.swift; sourceTree = "<group>"; };
 		20CC8EFD2677BE470083982E /* WindowsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowsController.swift; sourceTree = "<group>"; };
 		20D77B6E1A2547E5008A938D /* LEANActionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEANActionManager.h; sourceTree = "<group>"; };
 		20D77B6F1A2547E5008A938D /* LEANActionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEANActionManager.m; sourceTree = "<group>"; };
 		20DDA55A28BE706D00635E59 /* custom-icons.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "custom-icons.json"; sourceTree = "<group>"; };
 		20E49F8019A2C30C00B9343E /* LEANWebViewPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEANWebViewPool.h; sourceTree = "<group>"; };
 		20E49F8119A2C30C00B9343E /* LEANWebViewPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEANWebViewPool.m; sourceTree = "<group>"; };
-		20F1F40824F969EF004F680B /* custom_sound_1.aff */ = {isa = PBXFileReference; lastKnownFileType = file; path = custom_sound_1.aff; sourceTree = "<group>"; };
-		20F1F40924F969EF004F680B /* custom_sound_4.aff */ = {isa = PBXFileReference; lastKnownFileType = file; path = custom_sound_4.aff; sourceTree = "<group>"; };
-		20F1F40A24F969EF004F680B /* custom_sound_3.aff */ = {isa = PBXFileReference; lastKnownFileType = file; path = custom_sound_3.aff; sourceTree = "<group>"; };
-		20F1F40B24F969F0004F680B /* custom_sound_5.aff */ = {isa = PBXFileReference; lastKnownFileType = file; path = custom_sound_5.aff; sourceTree = "<group>"; };
-		20F1F40C24F969F0004F680B /* custom_sound_2.aff */ = {isa = PBXFileReference; lastKnownFileType = file; path = custom_sound_2.aff; sourceTree = "<group>"; };
 		20F38BAC1B0D5AC700E90B4D /* LEANToolbarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEANToolbarManager.h; sourceTree = "<group>"; };
 		20F38BAD1B0D5AC700E90B4D /* LEANToolbarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEANToolbarManager.m; sourceTree = "<group>"; };
 		20F49C2419C7BE8900B46C5A /* MediaAccessibility.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaAccessibility.framework; path = System/Library/Frameworks/MediaAccessibility.framework; sourceTree = SDKROOT; };
 		20F49C2619C7BE9100B46C5A /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		20FC7FB3199D1C7800A70B08 /* LEANTabManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEANTabManager.h; sourceTree = "<group>"; };
 		20FC7FB4199D1C7800A70B08 /* LEANTabManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEANTabManager.m; sourceTree = "<group>"; };
-		27F0E59042D016BF592C72A2 /* Pods-MedianIOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedianIOSTests.debug.xcconfig"; path = "Target Support Files/Pods-MedianIOSTests/Pods-MedianIOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		37011C952BC40AAE00775CA0 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		374399B52C2229E300B2F92D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		379E3D422A2147C4001C8A01 /* GNSwiftUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNSwiftUtilities.swift; sourceTree = "<group>"; };
+		3909A5A82C1C99E7001F68C3 /* MedianEventsManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MedianEventsManager.m; sourceTree = "<group>"; };
+		3909A5AA2C1C99EE001F68C3 /* MedianEventsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MedianEventsManager.h; sourceTree = "<group>"; };
 		3946F0272BD0DE7100E74ED5 /* ContextMenuHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenuHandler.swift; sourceTree = "<group>"; };
 		395C156F2B75D19D00E2985D /* LEANWindowsManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANWindowsManager.m; sourceTree = "<group>"; };
 		395C15712B75D1A900E2985D /* LEANWindowsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LEANWindowsManager.h; sourceTree = "<group>"; };
@@ -275,12 +266,12 @@
 		39D073802BBB12EA004FF636 /* LEANPDFManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANPDFManager.m; sourceTree = "<group>"; };
 		39DE1B472935E66E0001E926 /* GNLogManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GNLogManager.h; sourceTree = "<group>"; };
 		39DE1B482935E67F0001E926 /* GNLogManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNLogManager.m; sourceTree = "<group>"; };
-		3F29DE9B4CEB50D99DA2D260 /* Pods-AssociationHouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssociationHouse.release.xcconfig"; path = "Target Support Files/Pods-AssociationHouse/Pods-AssociationHouse.release.xcconfig"; sourceTree = "<group>"; };
-		5669F344E82B3D1D30ED3738 /* Pods-AssociationHouse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssociationHouse.debug.xcconfig"; path = "Target Support Files/Pods-AssociationHouse/Pods-AssociationHouse.debug.xcconfig"; sourceTree = "<group>"; };
-		57B26C0FE7D1B5AEC213FEDA /* Pods-MedianIOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedianIOSTests.release.xcconfig"; path = "Target Support Files/Pods-MedianIOSTests/Pods-MedianIOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		6204B12ADCD3BD22C2FED8E4 /* Pods_MedianIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedianIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6321B2F0F247B73B862558F0 /* Pods-GoNativeIOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoNativeIOSTests.release.xcconfig"; path = "Target Support Files/Pods-GoNativeIOSTests/Pods-GoNativeIOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		704A05039A2CBBE8CEFF1108 /* Pods-GonativeIO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GonativeIO.debug.xcconfig"; path = "Target Support Files/Pods-GonativeIO/Pods-GonativeIO.debug.xcconfig"; sourceTree = "<group>"; };
+		39DE1E4B2C82014300E96CFE /* LEANLoadingSpinnerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LEANLoadingSpinnerManager.h; sourceTree = "<group>"; };
+		39DE1E4C2C82015900E96CFE /* LEANLoadingSpinnerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANLoadingSpinnerManager.m; sourceTree = "<group>"; };
+		3B6E2DB287F72FB320453184 /* Pods-AssociationHouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssociationHouse.release.xcconfig"; path = "Target Support Files/Pods-AssociationHouse/Pods-AssociationHouse.release.xcconfig"; sourceTree = "<group>"; };
+		4C74E9233A1532B38445C85A /* Pods-MedianIOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedianIOSTests.debug.xcconfig"; path = "Target Support Files/Pods-MedianIOSTests/Pods-MedianIOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		74686CE5E5C79A441C3D2C20 /* Pods-Median.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Median.debug.xcconfig"; path = "Target Support Files/Pods-Median/Pods-Median.debug.xcconfig"; sourceTree = "<group>"; };
+		A790DA6927FDBA77A0DE081F /* Pods-MedianIOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedianIOSTests.release.xcconfig"; path = "Target Support Files/Pods-MedianIOSTests/Pods-MedianIOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		BB182FAF2683478900DC8EAA /* LEANDlogDefinition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LEANDlogDefinition.h; sourceTree = "<group>"; };
 		BB3C460D26A9C1F9007D03DA /* GoNativeJSBridgeLibrary.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = GoNativeJSBridgeLibrary.js; sourceTree = "<group>"; };
 		BB6E68A7273C7308004846A3 /* GNJSBridgeInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GNJSBridgeInterface.h; sourceTree = "<group>"; };
@@ -291,10 +282,9 @@
 		BBED1D602A4CBEB000180EBF /* customJS.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = customJS.js; sourceTree = "<group>"; };
 		BBED1D622A4CBEC900180EBF /* iosCustomCSS.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = iosCustomCSS.css; sourceTree = "<group>"; };
 		BBED1D642A4CBED900180EBF /* iosCustomJS.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = iosCustomJS.js; sourceTree = "<group>"; };
-		CB0604840B04380FB43592B0 /* Pods-Median.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Median.debug.xcconfig"; path = "Target Support Files/Pods-Median/Pods-Median.debug.xcconfig"; sourceTree = "<group>"; };
-		D34123186C7515C0E5EFB9A5 /* Pods-Median.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Median.release.xcconfig"; path = "Target Support Files/Pods-Median/Pods-Median.release.xcconfig"; sourceTree = "<group>"; };
-		D9442E615446B0D00107BDDC /* Pods_AssociationHouse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AssociationHouse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E07AD9F93CDDA4A887CC8FBB /* Pods-GoNativeIOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoNativeIOSTests.debug.xcconfig"; path = "Target Support Files/Pods-GoNativeIOSTests/Pods-GoNativeIOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E25604E0CD240051E8FA3B56 /* Pods-AssociationHouse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssociationHouse.debug.xcconfig"; path = "Target Support Files/Pods-AssociationHouse/Pods-AssociationHouse.debug.xcconfig"; sourceTree = "<group>"; };
+		E98BC2B9BA1816FA11571F5B /* Pods_AssociationHouse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AssociationHouse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9BBED51E055455D5C4808AF /* Pods-Median.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Median.release.xcconfig"; path = "Target Support Files/Pods-Median/Pods-Median.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -316,7 +306,7 @@
 				2002B49E18A9991300495B3D /* CoreGraphics.framework in Frameworks */,
 				2002B4A018A9991300495B3D /* UIKit.framework in Frameworks */,
 				2002B49C18A9991300495B3D /* Foundation.framework in Frameworks */,
-				38C55326AFF6897EFD39ADC2 /* Pods_AssociationHouse.framework in Frameworks */,
+				75931D4AC8E005CD2B694987 /* Pods_AssociationHouse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,7 +316,7 @@
 			files = (
 				2002B4C018A9991300495B3D /* UIKit.framework in Frameworks */,
 				2002B4BF18A9991300495B3D /* Foundation.framework in Frameworks */,
-				8C1309EE4D3426FD2400FDE7 /* Pods_MedianIOSTests.framework in Frameworks */,
+				93DA21EB31AE6F56B651894C /* Pods_MedianIOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,8 +362,8 @@
 				2002B49B18A9991300495B3D /* Foundation.framework */,
 				2002B49D18A9991300495B3D /* CoreGraphics.framework */,
 				2002B49F18A9991300495B3D /* UIKit.framework */,
-				6204B12ADCD3BD22C2FED8E4 /* Pods_MedianIOSTests.framework */,
-				D9442E615446B0D00107BDDC /* Pods_AssociationHouse.framework */,
+				0B6D83597DFB31F85DB20AAC /* Pods_MedianIOSTests.framework */,
+				E98BC2B9BA1816FA11571F5B /* Pods_AssociationHouse.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -394,17 +384,14 @@
 				2002B4B618A9991300495B3D /* Images.xcassets */,
 				20AEC8C9234BE20200DBE24D /* Assets.xcassets */,
 				20689023215E9FD900419CB2 /* Localizable.strings */,
+				374399B42C2229E300B2F92D /* InfoPlist.strings */,
 				20A525ED1A7D94EE00936DC5 /* Settings.bundle */,
 				209A964423BAC508001906F1 /* appbeep.wav */,
-				200F75CF1BCDA6B800C08BB5 /* notification.aff */,
-				20F1F40824F969EF004F680B /* custom_sound_1.aff */,
-				20F1F40C24F969F0004F680B /* custom_sound_2.aff */,
-				20F1F40A24F969EF004F680B /* custom_sound_3.aff */,
-				20F1F40924F969EF004F680B /* custom_sound_4.aff */,
-				20F1F40B24F969F0004F680B /* custom_sound_5.aff */,
 				2002B51118AB091C00495B3D /* jquery-2.1.0.min.js */,
 				397F6C072AC147B000BD0474 /* LEANHeaders.h */,
 				3946F0272BD0DE7100E74ED5 /* ContextMenuHandler.swift */,
+				3909A5AA2C1C99EE001F68C3 /* MedianEventsManager.h */,
+				3909A5A82C1C99E7001F68C3 /* MedianEventsManager.m */,
 				209A964123BABF2D001906F1 /* GNBackgroundAudio.h */,
 				209A964223BABF2D001906F1 /* GNBackgroundAudio.m */,
 				2092E236205C3E83005E8B71 /* GNConfigPreferences.h */,
@@ -428,6 +415,8 @@
 				201AB2D51996AD66008C31BF /* LEANInstallation.m */,
 				39C7BFC92A85E64A006AF63C /* LEANLaunchScreenManager.h */,
 				39C7BFCA2A85E666006AF63C /* LEANLaunchScreenManager.m */,
+				39DE1E4B2C82014300E96CFE /* LEANLoadingSpinnerManager.h */,
+				39DE1E4C2C82015900E96CFE /* LEANLoadingSpinnerManager.m */,
 				39D0737F2BBB12E2004FF636 /* LEANPDFManager.h */,
 				39D073802BBB12EA004FF636 /* LEANPDFManager.m */,
 				2089662518AC6753007FC34F /* LEANLoginManager.h */,
@@ -462,7 +451,6 @@
 				20E49F8119A2C30C00B9343E /* LEANWebViewPool.m */,
 				395C15712B75D1A900E2985D /* LEANWindowsManager.h */,
 				395C156F2B75D19D00E2985D /* LEANWindowsManager.m */,
-				20C62B7C1D2708B7001D1646 /* GoNativeKeychain.swift */,
 				204AE86118D4D60D009AF272 /* NSURL+LEANUtilities.h */,
 				204AE86218D4D60D009AF272 /* NSURL+LEANUtilities.m */,
 				202E989319EF30C8009C28AD /* Reachability.h */,
@@ -565,16 +553,12 @@
 		94421A86163F4578AAF865FD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E07AD9F93CDDA4A887CC8FBB /* Pods-GoNativeIOSTests.debug.xcconfig */,
-				6321B2F0F247B73B862558F0 /* Pods-GoNativeIOSTests.release.xcconfig */,
-				704A05039A2CBBE8CEFF1108 /* Pods-GonativeIO.debug.xcconfig */,
-				123B42EE01E9717A212060F2 /* Pods-GonativeIO.release.xcconfig */,
-				CB0604840B04380FB43592B0 /* Pods-Median.debug.xcconfig */,
-				D34123186C7515C0E5EFB9A5 /* Pods-Median.release.xcconfig */,
-				27F0E59042D016BF592C72A2 /* Pods-MedianIOSTests.debug.xcconfig */,
-				57B26C0FE7D1B5AEC213FEDA /* Pods-MedianIOSTests.release.xcconfig */,
-				5669F344E82B3D1D30ED3738 /* Pods-AssociationHouse.debug.xcconfig */,
-				3F29DE9B4CEB50D99DA2D260 /* Pods-AssociationHouse.release.xcconfig */,
+				74686CE5E5C79A441C3D2C20 /* Pods-Median.debug.xcconfig */,
+				F9BBED51E055455D5C4808AF /* Pods-Median.release.xcconfig */,
+				4C74E9233A1532B38445C85A /* Pods-MedianIOSTests.debug.xcconfig */,
+				A790DA6927FDBA77A0DE081F /* Pods-MedianIOSTests.release.xcconfig */,
+				E25604E0CD240051E8FA3B56 /* Pods-AssociationHouse.debug.xcconfig */,
+				3B6E2DB287F72FB320453184 /* Pods-AssociationHouse.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -586,13 +570,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2002B4CD18A9991300495B3D /* Build configuration list for PBXNativeTarget "AssociationHouse" */;
 			buildPhases = (
-				203E7F916C980AD1752153DE /* [CP] Check Pods Manifest.lock */,
+				BB858F1AD47A92D5DDD46E4A /* [CP] Check Pods Manifest.lock */,
 				2002B49418A9991300495B3D /* Sources */,
 				2002B49518A9991300495B3D /* Frameworks */,
 				2002B49618A9991300495B3D /* Resources */,
 				2081A2921F33ECE900057E3F /* Embed Foundation Extensions */,
-				62F936383ED2769E752E0C07 /* [CP] Embed Pods Frameworks */,
-				DBF188C562C2A24EDE84BD72 /* [CP] Copy Pods Resources */,
+				FE0A5429F08A5E7F27D6A17E /* [CP] Embed Pods Frameworks */,
+				6043925E51204310ADE59BA2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -607,7 +591,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2002B4D018A9991300495B3D /* Build configuration list for PBXNativeTarget "MedianIOSTests" */;
 			buildPhases = (
-				2726021EDB0A4B8F63959258 /* [CP] Check Pods Manifest.lock */,
+				E471A63B369A693E2DC20037 /* [CP] Check Pods Manifest.lock */,
 				2002B4B818A9991300495B3D /* Sources */,
 				2002B4B918A9991300495B3D /* Frameworks */,
 				2002B4BA18A9991300495B3D /* Resources */,
@@ -682,6 +666,8 @@
 				ko,
 				"zh-Hant",
 				ru,
+				uk,
+				ja,
 			);
 			mainGroup = 2002B48F18A9991300495B3D;
 			productRefGroup = 2002B49918A9991300495B3D /* Products */;
@@ -700,7 +686,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				20B927AA28C4F03E004D4C15 /* custom-icons.ttf in Resources */,
-				20F1F41024F969F0004F680B /* custom_sound_5.aff in Resources */,
 				2002B51318AB093900495B3D /* jquery-2.1.0.min.js in Resources */,
 				20A13ABC1905FAA600B997DD /* MenuChildNoIcon.xib in Resources */,
 				BB3C460E26A9C1F9007D03DA /* GoNativeJSBridgeLibrary.js in Resources */,
@@ -717,20 +702,16 @@
 				2075775A2195D80300ADD73A /* LaunchScreenNav.storyboard in Resources */,
 				209B321D193FB11A0052A7C6 /* localCache.zip in Resources */,
 				BBED1D612A4CBEB000180EBF /* customJS.js in Resources */,
-				20F1F40D24F969F0004F680B /* custom_sound_1.aff in Resources */,
 				20DDA55B28BE706D00635E59 /* custom-icons.json in Resources */,
 				209A964523BAC508001906F1 /* appbeep.wav in Resources */,
 				BBD972F227AF17C500AD4FC0 /* GoogleService-Info.plist in Resources */,
 				208A9F42191AEBAD0049E664 /* appConfig.json in Resources */,
 				2002B4AF18A9991300495B3D /* Main.storyboard in Resources */,
-				20F1F40F24F969F0004F680B /* custom_sound_3.aff in Resources */,
+				374399B62C2229E300B2F92D /* InfoPlist.strings in Resources */,
 				2004820518B080DD005FDD9A /* SidebarHeaderView.xib in Resources */,
 				2075775621957C1600ADD73A /* LaunchScreen.storyboard in Resources */,
-				20F1F40E24F969F0004F680B /* custom_sound_4.aff in Resources */,
-				200F75D01BCDA6B800C08BB5 /* notification.aff in Resources */,
 				BBED1D5F2A4CBE9400180EBF /* customCSS.css in Resources */,
 				20A525EE1A7D94EE00936DC5 /* Settings.bundle in Resources */,
-				20F1F41124F969F0004F680B /* custom_sound_2.aff in Resources */,
 				2002B4A618A9991300495B3D /* InfoPlist.strings in Resources */,
 				20689025215E9FD900419CB2 /* Localizable.strings in Resources */,
 				20A13AA81905A43C00B997DD /* MenuGroupIcon.xib in Resources */,
@@ -748,7 +729,27 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		203E7F916C980AD1752153DE /* [CP] Check Pods Manifest.lock */ = {
+		6043925E51204310ADE59BA2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AssociationHouse/Pods-AssociationHouse-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/GoNativeCore/GoNativeCore_Privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/GoNativeCore/GoNativeCoreResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoNativeCore_Privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoNativeCoreResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AssociationHouse/Pods-AssociationHouse-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB858F1AD47A92D5DDD46E4A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -770,7 +771,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2726021EDB0A4B8F63959258 /* [CP] Check Pods Manifest.lock */ = {
+		E471A63B369A693E2DC20037 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -792,7 +793,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		62F936383ED2769E752E0C07 /* [CP] Embed Pods Frameworks */ = {
+		FE0A5429F08A5E7F27D6A17E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -800,36 +801,18 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-AssociationHouse/Pods-AssociationHouse-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/MedianIcons/MedianIcons.framework",
-				"${BUILT_PRODUCTS_DIR}/zipzap/zipzap.framework",
+				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/GoNativeCore/Binary/GoNativeCore.framework/GoNativeCore",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MedianIcons.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/zipzap.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoNativeCore.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AssociationHouse/Pods-AssociationHouse-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DBF188C562C2A24EDE84BD72 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AssociationHouse/Pods-AssociationHouse-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/GoNativeCore/GoNativeCore_Privacy.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoNativeCore_Privacy.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AssociationHouse/Pods-AssociationHouse-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -850,9 +833,11 @@
 				2002B4E618A99A9900495B3D /* REFrostedContainerViewController.m in Sources */,
 				20D77B701A2547E5008A938D /* LEANActionManager.m in Sources */,
 				202E989519EF30C8009C28AD /* Reachability.m in Sources */,
+				39DE1E4D2C82015900E96CFE /* LEANLoadingSpinnerManager.m in Sources */,
 				39D073812BBB12EA004FF636 /* LEANPDFManager.m in Sources */,
 				2089662718AC6753007FC34F /* LEANLoginManager.m in Sources */,
 				2002B4FC18A99C4100495B3D /* LEANUtilities.m in Sources */,
+				3909A5A92C1C99E7001F68C3 /* MedianEventsManager.m in Sources */,
 				397F6C0C2AC14B4A00BD0474 /* LEANKeyboardManager.m in Sources */,
 				20E49F8219A2C30C00B9343E /* LEANWebViewPool.m in Sources */,
 				2046CAFA1BC0790800714F66 /* GNRegistrationManager.m in Sources */,
@@ -863,7 +848,6 @@
 				209A964323BABF2D001906F1 /* GNBackgroundAudio.m in Sources */,
 				BB6E68A9273C731E004846A3 /* GNJSBridgeInterface.m in Sources */,
 				2002B4FB18A99C4100495B3D /* LEANRootViewController.m in Sources */,
-				20C62B7D1D2708B7001D1646 /* GoNativeKeychain.swift in Sources */,
 				2002B4E518A99A9900495B3D /* RECommonFunctions.m in Sources */,
 				201AB2D61996AD66008C31BF /* LEANInstallation.m in Sources */,
 				BB9A3B012631D2A7002C38F1 /* LEANIcons.swift in Sources */,
@@ -938,6 +922,14 @@
 				20689024215E9FD900419CB2 /* en */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		374399B42C2229E300B2F92D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				374399B52C2229E300B2F92D /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1064,7 +1056,7 @@
 		};
 		2002B4CE18A9991300495B3D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5669F344E82B3D1D30ED3738 /* Pods-AssociationHouse.debug.xcconfig */;
+			baseConfigurationReference = E25604E0CD240051E8FA3B56 /* Pods-AssociationHouse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -1072,7 +1064,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = ZHN2P52NGG;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1108,7 +1100,7 @@
 		};
 		2002B4CF18A9991300495B3D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F29DE9B4CEB50D99DA2D260 /* Pods-AssociationHouse.release.xcconfig */;
+			baseConfigurationReference = 3B6E2DB287F72FB320453184 /* Pods-AssociationHouse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -1116,7 +1108,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = ZHN2P52NGG;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1151,7 +1143,7 @@
 		};
 		2002B4D118A9991300495B3D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27F0E59042D016BF592C72A2 /* Pods-MedianIOSTests.debug.xcconfig */;
+			baseConfigurationReference = 4C74E9233A1532B38445C85A /* Pods-MedianIOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GonativeIO.app/GonativeIO";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1175,7 +1167,7 @@
 		};
 		2002B4D218A9991300495B3D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57B26C0FE7D1B5AEC213FEDA /* Pods-MedianIOSTests.release.xcconfig */;
+			baseConfigurationReference = A790DA6927FDBA77A0DE081F /* Pods-MedianIOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GonativeIO.app/GonativeIO";
 				FRAMEWORK_SEARCH_PATHS = (

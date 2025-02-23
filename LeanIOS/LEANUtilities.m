@@ -795,4 +795,64 @@
     return [urlPath hasPrefix:cookiePath];
 }
 
++ (void)createRequestFromUrl:(NSURL *)url completion:(void (^)(NSURLRequest *request))completion {
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    
+    NSString *userAgent = [[GoNativeAppConfig sharedAppConfig] userAgentForUrl:url];
+    if (userAgent) {
+        [request setValue:userAgent forHTTPHeaderField:@"User-Agent"];
+    }
+    
+    if (![GoNativeAppConfig sharedAppConfig].useWKWebView) {
+        completion(request);
+        return;
+    }
+    
+    WKHTTPCookieStore *cookieStore = [WKWebsiteDataStore defaultDataStore].httpCookieStore;
+    [cookieStore getAllCookies:^(NSArray<NSHTTPCookie *> * _Nonnull cookies) {
+        NSMutableArray *cookiesToSend = [NSMutableArray array];
+        for (NSHTTPCookie *cookie in cookies) {
+            if ([self cookie:cookie matchesUrl:url]) {
+                [cookiesToSend addObject:cookie];
+            }
+        }
+        
+        NSDictionary *headerFields = [NSHTTPCookie requestHeaderFieldsWithCookies:cookiesToSend];
+        NSString *cookieHeader = headerFields[@"Cookie"];
+        if (cookieHeader) {
+            [request addValue:cookieHeader forHTTPHeaderField:@"Cookie"];
+        }
+        
+        completion(request);
+    }];
+}
+
++ (void)downloadUrl:(NSURL *)url filename:(NSString *)filename directory:(NSURL *)directory completion:(void (^)(NSURL *fileUrl))completion {
+    if (url.isFileURL) {
+        return completion(url);
+    }
+    
+    [self createRequestFromUrl:url completion:^(NSURLRequest *request) {
+        NSURLSessionDownloadTask *task = [[NSURLSession sharedSession] downloadTaskWithRequest:request completionHandler:^(NSURL *location, NSURLResponse *response, NSError *error) {
+            if (error || !location) {
+                return completion(nil);
+            }
+            
+            NSError *moveError;
+            NSURL *destination = [directory URLByAppendingPathComponent:filename];
+            
+            [[NSFileManager defaultManager] removeItemAtURL:destination error:nil];
+            [[NSFileManager defaultManager] moveItemAtURL:location toURL:destination error:&moveError];
+            
+            if (moveError) {
+                return completion(nil);
+            }
+            
+            completion(destination);
+        }];
+        
+        [task resume];
+    }];
+}
+
 @end
